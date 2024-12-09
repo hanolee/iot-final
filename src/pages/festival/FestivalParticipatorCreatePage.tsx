@@ -74,8 +74,8 @@ const FestivalParticipatorCreatePage = () => {
         title: `${location.timestamp} - ${location.district}`,
         map: map,
         icon: {
-          url: 'https://example.com/your-new-bicycle-icon.png', // Replace with your new bicycle icon URL
-          scaledSize: new naver.maps.Size(20, 20), // 사용자 정의 크기
+          url: 'https://cdn-icons-png.flaticon.com/512/9128/9128343.png', // Replace with your new bicycle icon URL
+          scaledSize: new naver.maps.Size(30, 30), // 사용자 정의 크기
           origin: new naver.maps.Point(0, 0),
           anchor: new naver.maps.Point(10, 20) // 마커의 하단 중앙을 기준으로 앵커
         }
