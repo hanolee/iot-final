@@ -1,21 +1,7 @@
 import styled from '@emotion/styled'
 import { useEffect, useRef, useState } from 'react'
 
-const FestivalParticipatorCreatePage = () => {
-  const [companyName, setCompanyName] = useState('')
-  const [boothNumber, setBoothNumber] = useState<number>(1)
-  const [boothDescription, setBoothDescription] = useState('')
-  const [tea, setTea] = useState('')
-  const [country, setCountry] = useState<'KR' | 'CN' | 'JP' | 'LK' | 'TW' | 'US'>('KR')
-  // 위치
-  const [latitude, setLatitude] = useState(0)
-  const [longitude, setLongitude] = useState(0)
-
-  const handleBoothNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (/^\d*$/.test(e.target.value)) {
-      setBoothNumber(Number(e.target.value))
-    }
-  }
+const MapPage = () => {
 
   const [selectedMarkerInfo, setSelectedMarkerInfo] = useState<string | null>(null)
 
@@ -117,7 +103,7 @@ const FestivalParticipatorCreatePage = () => {
   )
 }
 
-export default FestivalParticipatorCreatePage
+export default MapPage
 
 // Styled components
 const PageWrapperCentered = styled.div`
